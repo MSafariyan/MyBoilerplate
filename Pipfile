@@ -1,0 +1,47 @@
+[project]
+name = 'MyPlate'
+description = 'My BoilerPlate'
+authors = [
+    { name = 'Mehdi Safarian', email = 'work@mahdisafarian.ir' },
+]
+license = { file = 'LICENSE' }
+readme = 'README.md'
+classifiers = [
+    'Programming Language :: Python :: 3.11',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Unix',
+    'Operating System :: POSIX :: Linux',
+    'Environment :: Console',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+requires-python = '>=3.11'
+dynamic = ['version']
+[project.urls]
+Homepage = 'https://git.narvanventures.com/Invex/Trade/invex-transfer-serve'
+
+
+
+
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.75.1"
+sqlalchemy = "==1.4.35"
+mysqlclient = "==2.1.0"
+uvicorn = {extras = ["standard"], version = "==0.17.6"}
+python-dotenv = "==0.20.0"
+strawberry-graphql = {extras = ["fastapi"], version = "==0.114.0"}
+
+[dev-packages]
+pre-commit = "==2.18.1"
+pytest = "==7.1.2"
+pytest-cov = "==3.0.0"
+black = "==22.3.0"
+strawberry-graphql = {extras = ["debug-server"], version = "==0.114.0"}
+
+[requires]
+python_version = "3.11"
