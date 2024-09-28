@@ -14,9 +14,9 @@ repos:
         -   id: black
     - repo: local
       hooks:
-          - id: custom-script-file
-            name: custom-script-file
-            entry: hooks/pre-commit.sh
+          - id: generate-pip-requirements
+            name: generate-pip-requirements
+            entry: hooks/piiip.sh
             language: script
             types: [ python ]
             pass_filenames: false
