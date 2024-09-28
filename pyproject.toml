@@ -1,3 +1,26 @@
+[project]
+name = 'MyPlate'
+description = 'My BoilerPlate'
+authors = [
+    { name = 'Mehdi Safarian', email = 'work@mahdisafarian.ir' },
+]
+license = { file = 'LICENSE' }
+readme = 'README.md'
+classifiers = [
+    'Programming Language :: Python :: 3.11',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Unix',
+    'Operating System :: POSIX :: Linux',
+    'Environment :: Console',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+requires-python = '>=3.11'
+dynamic = ['version']
+[project.urls]
+Homepage = 'https://git.narvanventures.com/Invex/Trade/invex-transfer-serve'
+
+
 [tool.black]
 line-length = 60
 
@@ -13,3 +36,22 @@ pythonpath = [
 testpaths = [
   "__tests__"
 ]
+
+[tool.black]
+color = true
+line-length = 120
+target-version = ['py311']
+skip-string-normalization = true
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
