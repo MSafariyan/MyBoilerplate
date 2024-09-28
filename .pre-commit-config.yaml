@@ -16,9 +16,10 @@ repos:
       hooks:
           - id: generate-pip-requirements
             name: generate-pip-requirements
-            entry: hooks/piiip.sh
-            language: script
+            entry: bash -c 'pipenv requirements > requirements.txt && exit 0'
+            language: system
             types: [ python ]
-            pass_filenames: false
+            always_run: true
+            verbose: true
 exclude: env
 fail_fast: true

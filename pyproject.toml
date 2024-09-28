@@ -21,9 +21,6 @@ dynamic = ['version']
 Homepage = 'https://git.narvanventures.com/Invex/Trade/invex-transfer-serve'
 
 
-[tool.black]
-line-length = 60
-
 [tool.isort]
 profile = "black"
 src_paths = ["configs", "core", "dependencies", "models", "repositories", "routers", "schemas", "services"]

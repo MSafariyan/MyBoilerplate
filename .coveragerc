@@ -4,4 +4,3 @@ omit =
         __tests__/*
         **/__init__.py
         main.py
-
