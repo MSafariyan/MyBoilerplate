@@ -1,22 +1,20 @@
 [[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
+url = "https://repo.narvanventures.com/repository/pyp/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
 
 [packages]
-fastapi = "==0.75.1"
-sqlalchemy = "==1.4.35"
-mysqlclient = "==2.1.0"
-uvicorn = {extras = ["standard"], version = "==0.17.6"}
-python-dotenv = "==0.20.0"
-strawberry-graphql = {extras = ["fastapi"], version = "==0.114.0"}
+fastapi = "==0.115.0"
+sqlalchemy = "==2.0.35"
+mysqlclient = "==2.2.4"
+uvicorn = {extras = ["standard"], version = "==0.31.0"}
+python-dotenv = "==1.0.1"
 
 [dev-packages]
-pre-commit = "==2.18.1"
-pytest = "==7.1.2"
-pytest-cov = "==3.0.0"
-black = "==22.3.0"
-strawberry-graphql = {extras = ["debug-server"], version = "==0.114.0"}
+pre-commit = "==3.8.0"
+pytest = "==8.3.3"
+pytest-cov = "==5.0.0"
+black = "==24.8.0"
 
 [requires]
 python_version = "3.11"
